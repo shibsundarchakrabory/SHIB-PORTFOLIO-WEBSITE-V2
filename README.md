@@ -14,7 +14,7 @@ This guide will walk you through setting up the project locally and deploying up
 
 If you're setting up this project on a new machine, follow these steps first.
 
-**A. Clone the Repository**
+#### A. Clone the Repository
 
 Clone the project from GitHub to your local machine:
 
@@ -22,14 +22,13 @@ Clone the project from GitHub to your local machine:
 git clone https://github.com/shibsundarchakrabory/SHIB-PORTFOLIO-WEBSITE-V2.git
 ```
 
-**B. Navigate to the Project Directory**
+## B. Navigate to the Project Directory**
 
 ```bash
 cd SHIB-PORTFOLIO-WEBSITE-V2
 ```
 
 **C. Install Dependencies**
-
 Install all the necessary project dependencies using npm:
 
 ```bash
@@ -52,7 +51,7 @@ This will start a local server, usually at `http://localhost:5173`. You can open
 
 Once you have made your changes and tested them locally, follow these steps to update the live website on GitHub Pages.
 
-**Step A: Add and Commit Your Changes**
+>### Step A: Add and Commit Your Changes**
 
 Use Git to stage and commit your changes. It's good practice to write a clear commit message describing what you've changed.
 
@@ -64,7 +63,7 @@ git add .
 git commit -m "Describe the changes you made, e.g., 'Updated project section'"
 ```
 
-**Step B: Push Your Source Code to GitHub**
+> ### Step B: Push Your Source Code to GitHub**
 
 Push your committed changes to the `main` branch on GitHub. This saves your source code.
 
@@ -72,7 +71,7 @@ Push your committed changes to the `main` branch on GitHub. This saves your sour
 git push origin main
 ```
 
-**Step C: Deploy to GitHub Pages**
+> ### Step C: Deploy to GitHub Pages**
 
 Run the deploy script. This single command handles the entire deployment process.
 
@@ -80,9 +79,9 @@ Run the deploy script. This single command handles the entire deployment process
 npm run deploy
 ```
 
-#### What `npm run deploy` does:
+#### What `npm run deploy` does
 
-1.  **`npm run build`**: It first builds the production-ready version of your site. This process bundles all your code and assets into a `dist` folder.
-2.  **`gh-pages -d dist`**: It then takes the contents of the `dist` folder and pushes them to the `gh-pages` branch of your repository.
+1. **`npm run build`**: It first builds the production-ready version of your site. This process bundles all your code and assets into a `dist` folder.
+2. **`gh-pages -d dist`**: It then takes the contents of the `dist` folder and pushes them to the `gh-pages` branch of your repository.
 
 GitHub Pages is configured to serve the website from this `gh-pages` branch. Your updates should be live within a few minutes.
