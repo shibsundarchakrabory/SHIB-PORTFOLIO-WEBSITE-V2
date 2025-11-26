@@ -9,27 +9,37 @@
   transition: background-color 0.3s ease;
 }
 
-.logo{
+.logo {
   height: 40px;
   width: 40px;
   background: #61f097;
 }
 
-.linkdiv{
+.linkdiv {
   width: 70%;
   height: 80%;
   background: #61f097;
   border-radius: 20px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-
-.navlink{
+.navlink {
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: black;
-  /* background: #61f097; */
+  color: #333;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.navlink:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
 
+.navlink:active {
+  background-color: #007bff; /* Blue background for the active link */
+  color: white;
+}

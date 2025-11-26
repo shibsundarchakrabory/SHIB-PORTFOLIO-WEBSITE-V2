@@ -1,4 +1,5 @@
 .Creationsbody {
     padding: 2rem;
     min-height: calc(100vh - 150px); /* Adjust based on nav/footer height */
+    align-items: center;
 }

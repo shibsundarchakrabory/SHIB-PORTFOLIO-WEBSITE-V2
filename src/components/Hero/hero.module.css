@@ -1,0 +1,10 @@
+.herobody{
+    height: 40vh;
+    width: 80vw;
+    background: #1bfff4;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}

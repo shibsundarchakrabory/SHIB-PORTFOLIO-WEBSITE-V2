@@ -30,9 +30,9 @@ body {
 
 :root {   /* Light Theme Variables */
   
-  --background-color: #ffffff;
+  --background-color: #E6E6E6;
   --text-color: #213547;
-  --nav-footer-bg: #f8f8f8;
+  --nav-footer-bg: #a6a6a600;
   --nav-footer-text: #333;
 }
 

@@ -1,4 +1,8 @@
 .homebody {
     padding: 2rem;
     min-height: calc(100vh - 150px); /* Adjust based on nav/footer height */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
