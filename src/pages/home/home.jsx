@@ -7,7 +7,7 @@ import Corosail from '../../components/corosail/Corosail'
 function Home() {
   return (
     <div className={styles.homebody} >
-      <Hero pageName="Home" />
+      <Hero pageName="WELLCOME TO MY PORTFOLIO" />
       <h1>Home Page</h1>
       <Corosail/>
     </div>

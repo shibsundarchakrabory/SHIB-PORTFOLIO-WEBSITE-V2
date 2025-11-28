@@ -1,9 +1,13 @@
 .corosailBody {
   width: 100%;
-  height: 40vh;
+  /* height: 40vh; */
   /* background: #212121; */
   display: flex;
   overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid var(--corosail-border);
+  border-bottom: 2px solid var(--corosail-border);
 }
 
 .corosailBody::-webkit-scrollbar{
@@ -21,15 +25,25 @@
 
 .card {
   flex: 0 0 5em;
-  /* height: 5em; */
+  height: 100px;
+  width:  100px; 
   border-radius: 30px;
-  padding: 1em;
+  padding: 1em 10px;
   background: #56d193;
   font-size: 3rem;
   text-align: center;
   align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.card img {
+  height: 120px;
+  width:  120px;
+  border-radius: 20px;
+  object-fit: cover;
+}
 
 
 
