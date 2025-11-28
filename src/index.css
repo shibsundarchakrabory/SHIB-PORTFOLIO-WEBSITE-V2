@@ -35,6 +35,7 @@ body {
   --nav-footer-bg: #a6a6a600;
   --nav-footer-text: #333;
   --corosail-border: #212121;
+  --star-color:#000000;
 }
 
 .dark-theme {   /* Dark Theme Variables */
@@ -44,6 +45,7 @@ body {
   --nav-footer-bg: #1a1a1a;
   --nav-footer-text: white;
   --corosail-border: #ffffff;
+  --star-color:#ffffff;
 }
 
 

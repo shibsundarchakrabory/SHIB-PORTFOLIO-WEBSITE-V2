@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className={styles.nav}>
-      <div className={styles.logo}>LOGO</div>
+      {/* <div className={styles.logo}>LOGO</div> */}
       <div className={styles.linkdiv}>
         <Link className={styles.navlink} to="/">Home</Link>
         <Link className={styles.navlink} to="/Creations">Creations</Link>

@@ -8,7 +8,7 @@ function Creations() {
     <div className={styles.Creationsbody} >
       <Corosail/>
       Creations
-    </div>
+    </div> 
   )
 }
 
