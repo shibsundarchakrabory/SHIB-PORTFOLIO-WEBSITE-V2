@@ -6,7 +6,7 @@ function Hero(props) {
   
   return (
     <div className={styles.herobody}>
-      <div className={styles.heroContent}>
+      <div className={`${styles.heroContent}, animate__animated animate__zoomInDown`} style={{ '--animate-duration': '2.5s' }}>
         <h1>{pageName}</h1>
       </div>
       <svg className={styles.waves} xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">

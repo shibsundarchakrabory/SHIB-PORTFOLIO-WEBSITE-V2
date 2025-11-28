@@ -23,6 +23,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  animation: fadeIn 2 ;
 }
 
 .navlink {
@@ -32,6 +33,7 @@
   font-weight: 500;
   border-radius: 30px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  /* animation: --animate__animated animate__bounce 1 ; */
 }
 
 .navlink:hover {
@@ -42,4 +44,29 @@
 .navlink:active {
   background-color: #007bff; /* Blue background for the active link */
   color: white;
+}
+
+
+
+
+@keyframes slideDownFadeIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
