@@ -1,0 +1,39 @@
+
+
+
+.TypingAnimationBody{
+    height: 40vh;
+    width: 100%;
+    background: #000;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.TypingAnimationSec1{
+    background: #e000fd;
+    height: 100%;
+    width: 60vw;
+}
+.TypingAnimationSec2{
+    background: #fd00a9;
+    height: 100%;
+    width: 40vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+

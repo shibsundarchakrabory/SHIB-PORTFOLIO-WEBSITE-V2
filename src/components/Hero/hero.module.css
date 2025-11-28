@@ -9,6 +9,13 @@
     color: black;
     position: relative;
     overflow: hidden;
+    transition: width 0.5s ease-in-out; /* Added for smooth transition */
+}
+
+.fullWidth {
+    width: 100vw;
+    border-radius: 0; /* Optional: remove border-radius when full-width */
+
 }
 
 .herobody h1{

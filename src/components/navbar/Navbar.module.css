@@ -9,11 +9,17 @@
   transition: background-color 0.3s ease;
 }
 
-/* .logo {
+.logo {
   height: 40px;
-  width: 40px;
+  width: 60px;
   background: #61f097;
-} */
+  border-radius: 10PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
 
 .linkdiv {
   width: 70%;
