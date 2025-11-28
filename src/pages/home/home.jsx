@@ -10,7 +10,7 @@ function Home() {
     <div className={styles.homebody} >
       <Hero pageName="WELLCOME TO MY PORTFOLIO" full />
       <h1>Home Page</h1>
-      <TypingAnimation/>
+      <TypingAnimation text="dkfgadhkfldfgbadylfdyfgvydsjdhlksvfsyhd"/>
       <Corosail/>
     </div>
   )
