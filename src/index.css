@@ -37,6 +37,7 @@ body {
   --corosail-border: #212121;
   --star-color:#000000;
   --text-color:#000000;
+  --typingsc2Border:#00ff22;
 }
 
 .dark-theme {   /* Dark Theme Variables */
@@ -48,6 +49,7 @@ body {
   --corosail-border: #ffffff;
   --star-color:#ffffff;
   --text-color:#ffffff;
+  --typingsc2Border:#ffffff;
 }
 
 

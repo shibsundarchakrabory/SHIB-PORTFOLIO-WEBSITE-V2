@@ -14,7 +14,7 @@ function Corosail() {
   const renderCards = () =>
     images.map((src, index) => (
       <div className={styles.card} key={index}>
-        <img src={src} alt={`tech logo ${index + 1}`} />
+        <img className={styles.cardImg} src={src} alt={`tech logo ${index + 1}`} />
       </div>
     ));
 

@@ -20,27 +20,26 @@
   flex-direction: row;
   gap: 1em;
   padding-right: 1em;
-  animation: spin 10s infinite linear;
+  animation: spin 8s infinite linear;
 }
 
 .card {
-  flex: 0 0 5em;
+  /* flex: 0 0 0; */
   height: 100px;
   width:  100px; 
+  border: 2px solid var(--corosail-border);
   border-radius: 30px;
-  padding: 1em 10px;
+  padding: 10px;
   background: #56d193;
-  font-size: 3rem;
   text-align: center;
-  align-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card img {
-  height: 120px;
-  width:  120px;
+.cardImg{
+  height: 80px;
+  width:  80px;
   border-radius: 20px;
   object-fit: cover;
 }

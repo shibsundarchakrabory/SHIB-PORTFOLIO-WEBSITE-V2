@@ -22,9 +22,12 @@
    
 }
 .TypingAnimationSec2{
-    background: #fd00a9;
+    /* background: #fd00a9; */
     height: 100%;
     width: 40vw;
+    border: 2px solid var(--typingsc2Border);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .TypingAnimationSec1 h2{
