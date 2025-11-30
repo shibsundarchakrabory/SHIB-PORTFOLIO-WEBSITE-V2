@@ -39,6 +39,7 @@ body {
   --text-color:#000000;
   --typingsc2Border:#00ff22;
   --cardsHoverolor:#000000;
+  --jourmyPara:#CCCCCC;
 }
 
 .dark-theme {   /* Dark Theme Variables */
@@ -52,6 +53,7 @@ body {
   --text-color:#ffffff;
   --typingsc2Border:#ffffff;
   --cardsHoverolor:#ffffff;
+  --jourmyPara:#404040;
 }
 
 
