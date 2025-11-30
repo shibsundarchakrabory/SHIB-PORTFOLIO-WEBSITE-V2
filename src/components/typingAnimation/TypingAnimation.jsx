@@ -28,7 +28,7 @@ function TypingAnimation(props) {
     <div className={styles.TypingAnimationBody}>
       <div className={`${styles.TypingAnimationSec1} ${!isTypingFinished ? styles.typingCursor : ''}`}>
         <h2>{displayedText}</h2>
-        <h2>{displayedText}</h2>
+        {/* <h2>{displayedText}</h2> */}
       </div>
       <div className={styles.TypingAnimationSec2}>
         {/* You can put other content here if needed */}

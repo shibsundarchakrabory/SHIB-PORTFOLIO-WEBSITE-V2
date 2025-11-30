@@ -5,10 +5,17 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme;
+    }
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return userPrefersDark ? 'dark' : 'light';
+  });
 
   useEffect(() => {
-    // Apply the theme class to the body element
+    localStorage.setItem('theme', theme);
     document.body.className = '';
     document.body.classList.add(`${theme}-theme`);
   }, [theme]);
@@ -23,3 +30,4 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
+

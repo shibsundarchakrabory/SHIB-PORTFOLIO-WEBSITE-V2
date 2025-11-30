@@ -6,11 +6,15 @@ import TypingAnimation from '../../components/typingAnimation/TypingAnimation'
 
 
 function Home() {
+
+  const description = "I am a passionate web developer with expertise in creating dynamic and responsive web applications. Welcome to my portfolio where you can explore my projects and skills."
+
+
   return (
     <div className={styles.homebody} >
       <Hero pageName="WELLCOME TO MY PORTFOLIO" full />
       <h1>Home Page</h1>
-      <TypingAnimation text="dkfgadhkfldfgbadylfdyfgvydsjdhlksvfsyhd"/>
+      <TypingAnimation text={description}/>
       <Corosail/>
     </div>
   )
