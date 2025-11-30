@@ -31,7 +31,43 @@ function TypingAnimation(props) {
         {/* <h2>{displayedText}</h2> */}
       </div>
       <div className={styles.TypingAnimationSec2}>
-        {/* You can put other content here if needed */}
+        <div className={styles.circuitBoard}>
+          <div className={`${styles.line} ${styles.line1}`}></div>
+          <div className={`${styles.line} ${styles.line2}`}></div>
+          <div className={`${styles.line} ${styles.line3}`}></div>
+          <div className={`${styles.line} ${styles.line4}`}></div>
+          <div className={`${styles.line} ${styles.line5}`}></div>
+          <div className={`${styles.line} ${styles.line6}`}></div>
+          <div className={`${styles.line} ${styles.line7}`}></div>
+          <div className={`${styles.line} ${styles.line8}`}></div>
+          <div className={`${styles.line} ${styles.line9}`}></div>
+          <div className={`${styles.line} ${styles.line10}`}></div>
+          <div className={`${styles.line} ${styles.line11}`}></div>
+          <div className={`${styles.line} ${styles.line12}`}></div>
+          <div className={`${styles.line} ${styles.line13}`}></div>
+          <div className={`${styles.line} ${styles.line14}`}></div>
+          <div className={`${styles.line} ${styles.line15}`}></div>
+          <div className={`${styles.line} ${styles.line16}`}></div>
+          <div className={`${styles.line} ${styles.line17}`}></div>
+          <div className={`${styles.line} ${styles.line18}`}></div>
+          <div className={`${styles.line} ${styles.line19}`}></div>
+          <div className={`${styles.line} ${styles.line20}`}></div>
+          <div className={`${styles.component} ${styles.comp1}`}></div>
+          <div className={`${styles.component} ${styles.comp2}`}></div>
+          <div className={`${styles.component} ${styles.comp3}`}></div>
+          <div className={`${styles.component} ${styles.comp4}`}></div>
+          <div className={`${styles.component} ${styles.comp5}`}></div>
+          <div className={`${styles.component} ${styles.comp6}`}></div>
+          <div className={`${styles.component} ${styles.comp7}`}></div>
+          <div className={`${styles.component} ${styles.comp8}`}></div>
+          <div className={`${styles.component} ${styles.comp9}`}></div>
+          <div className={`${styles.component} ${styles.comp10}`}></div>
+          <div className={`${styles.component} ${styles.comp11}`}></div>
+          <div className={`${styles.component} ${styles.comp12}`}></div>
+          <div className={`${styles.component} ${styles.comp13}`}></div>
+          <div className={`${styles.component} ${styles.comp14}`}></div>
+          <div className={`${styles.component} ${styles.comp15}`}></div>
+        </div>
       </div>
     </div>
   );

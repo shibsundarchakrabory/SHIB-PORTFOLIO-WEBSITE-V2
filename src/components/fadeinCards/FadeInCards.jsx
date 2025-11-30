@@ -1,29 +1,32 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './FadeInCards.module.css';
 import reactImage from '../../assets/react.png'; // Example image
+import QRCodeGenerator from '../../assets/QR_Code_Generator.png'; // Example image
+import LIGHAR_TECH from '../../assets/LIGHAR_TECH.png'; // Example image
+import calculator from '../../assets/calculator.png'; // Example image
 
 const creations = [
   {
     id: 1,
     title: 'CALCULATOR',
     description: 'its a calculator.',
-    image: reactImage,
+    image: calculator,
     link: 'https://shibsundarchakrabory.github.io/CALCULATOR/',
   },
   {
     id: 2,
     title: 'LIGHAR-TECH',
     description: 'A Company i site i created.',
-    image: reactImage,
+    image: LIGHAR_TECH,
     link: 'https://lighartech00.github.io/LIGHAR-TECH/',
   },
-  // {
-  //   id: 3,
-  //   title: 'Project Three',
-  //   description: 'A brief description of Project Three. It is a full-stack application with a Node.js backend.',
-  //   image: reactImage,
-  //   link: '#',
-  // },
+  {
+    id: 3,
+    title: 'RTTS',
+    description: 'A text to speach software.' ,
+    image: reactImage,
+    link: '#',
+  },
   // {
   //   id: 4,
   //   title: 'Project Four',
@@ -42,7 +45,7 @@ const creations = [
     id: 6,
     title: ' QR Code Generator',
     description: 'You enter the data select the cr code colors press enter and done.',
-    image: reactImage,
+    image: QRCodeGenerator,
     link: 'https://shibsundarchakrabory.github.io/qr_Code_genarator/',
   },
 ];

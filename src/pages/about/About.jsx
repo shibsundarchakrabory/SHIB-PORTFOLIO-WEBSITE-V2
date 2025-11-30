@@ -6,7 +6,7 @@ import Hero from '../../components/Hero/Hero';
 function About() {
   return (
     <div className={styles.aboutbody}>
-      <Hero pageName="about"/>
+      <Hero pageName="About"/>
       About
     </div>
   )
