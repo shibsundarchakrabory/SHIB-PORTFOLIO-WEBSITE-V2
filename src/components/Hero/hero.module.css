@@ -3,6 +3,7 @@
     width: 80vw;
     background: #1bfff4;
     border-radius: 30px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +12,7 @@
     overflow: hidden;
     transition: width 0.5s ease-in-out; /* Added for smooth transition */
 }
+
 
 .fullWidth {
   height: 60vh;

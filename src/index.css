@@ -40,6 +40,8 @@ body {
   --typingsc2Border:#00ff22;
   --cardsHoverolor:#000000;
   --jourmyPara:#CCCCCC;
+  --circuit-colors:#29914c;
+  --typing-shadow:#ffffff;
 }
 
 .dark-theme {   /* Dark Theme Variables */
@@ -54,6 +56,8 @@ body {
   --typingsc2Border:#ffffff;
   --cardsHoverolor:#ffffff;
   --jourmyPara:#404040;
+  --circuit-colors:#29914c;
+  --typing-shadow:#4e4e4e;
 }
 
 

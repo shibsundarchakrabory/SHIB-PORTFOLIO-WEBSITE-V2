@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className={styles.homebody} >
       <Hero pageName="WELLCOME TO MY PORTFOLIO" full />
-      <h1>Home Page</h1>
+      {/* <h1>Home Page</h1> */}
       <TypingAnimation text={description}/>
       <Corosail/>
     </div>

@@ -1,8 +1,11 @@
 .homebody {
-    padding: 2rem 0;
+    /* padding: 0 2rem  0; */
     min-height: calc(100vh - 150px); /* Adjust based on nav/footer height */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
 }
+
+
+/* .brack{height: 500px;} */

@@ -1,78 +1,214 @@
-.nav {
-  height: 8vh;
+
+
+/* ================================================================ */
+/* Navbar.module.css */
+/* ================================================================ */
+
+.navbar {
+  height: 70px;
   background-color: var(--nav-footer-bg);
-  padding: 1rem;
+  padding: 0 2rem;
   color: var(--nav-footer-text);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   transition: background-color 0.3s ease;
 }
 
 .logo {
-  height: 40px;
-  width: 60px;
-  background: #61f097;
-  border-radius: 10PX;
+  height: 55px;
+  width:  55px;
+  background: linear-gradient(135deg, #61f097 0%, #4cd080 100%);
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  color: #333;
+  /* font-weight: bold; */
+  /* font-size: 1.2rem; */
+  /* color: #333; */
+  box-shadow: 0 2px 8px rgba(97, 240, 151, 0.3);
+  cursor: pointer;
+  /* transition: transform 0.2s ease; */
 }
 
-.linkdiv {
-  width: 70%;
-  height: 80%;
-  background: #61f097;
-  border-radius: 20px;
+.logoimg{
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+
+
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.navlinkDiv {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  animation: fadeIn 2 ;
+  gap: 0.5rem;
 }
 
 .navlink {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
-  color: #333;
+  color: var(--nav-footer-text);
   font-weight: 500;
-  border-radius: 30px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  /* animation: --animate__animated animate__bounce 1 ; */
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .navlink:hover {
-  background-color: #e9ecef;
-  color: #000;
+  background-color: rgba(97, 240, 151, 0.1);
+  color: #61f097;
 }
 
 .navlink:active {
-  background-color: #007bff; /* Blue background for the active link */
+  background-color: #61f097;
   color: white;
 }
 
-
-
-
-@keyframes slideDownFadeIn {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.themeButton {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-footer-text);
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+  color: #61f097;
+}
+
+.dropDownMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: var(--nav-footer-bg);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropDownMenu.active {
+  right: 0;
+}
+
+.dropDownHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-footer-text);
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: #61f097;
+}
+
+.dropDownContent {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.dropdownNavlink {
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--nav-footer-text);
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-align: left;
+  animation: backInDown;
+}
+
+.dropdownNavlink:hover {
+  background-color: rgba(97, 240, 151, 0.1);
+  color: #61f097;
+  transform: translateX(5px);
+}
+
+.dropDownThemeButton {
+  margin-top: 2rem;
+  padding: 0 1.5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  /* animation: backInDown 0.3s ease; */
+  animation: backInDown ;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tablet and Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navlinkDiv {
+    display: none;
+  }
+
+  .themeButton {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .dropDownMenu {
+    width: 75%;
+  }
+
+  .logo {
+    height: 55px;
+    width:  55px;
+    /* font-size: 1rem; */
+  }
 }

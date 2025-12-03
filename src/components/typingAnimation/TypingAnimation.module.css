@@ -16,8 +16,23 @@
     /* background: #2a292b; */
     height: 100%;
     width: 60%;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.typingDecor{
+     border: 2px solid var(--typingsc2Border);
+     border-radius: 30px;
+     width: 80%;
+     height: 100%;
+     padding: 0 20px;
+     box-shadow: 20px 20px 60px var(--typing-shadow),
+                 -20px -20px 60px var(--typing-shadow);
+
+}
+
+
 .TypingAnimationSec2{
     /* background: #fd00a9; */
     height: 100%;
@@ -35,12 +50,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .line {
     position: absolute;
-    background-color: #000;
+    background-color: var(--circuit-colors);
 }
 
 .line1 { width: 2px; height: 20%; left: 5%; top: 0; }
@@ -63,6 +78,11 @@
 .line18 { width: 2px; height: 15%; left: 50%; top: 85%; }
 .line19 { width: 30%; height: 2px; top: 25%; left: 60%; }
 .line20 { width: 30%; height: 2px; top: 75%; left: 10%; }
+.line21 { width: 2px; height: 20%; left: 30%; top: 0; }
+.line22 { width: 2px; height: 25%; left: 70%; top: 75%; }
+.line23 { width: 15%; height: 2px; top: 15%; left: 25%; }
+.line24 { width: 10%; height: 2px; top: 85%; left: 65%; }
+.line25 { width: 2px; height: 30%; left: 40%; top: 20%; }
 
 .component {
     position: absolute;
@@ -84,6 +104,12 @@
 .comp13 { width: 10px; height: 10px; top: 55%; left: 33%; border-radius: 50%; }
 .comp14 { width: 10px; height: 10px; top: 45%; left: 68%; border-radius: 50%; animation: blink 4s infinite; }
 .comp15 { width: 25px; height: 25px; top: 45%; left: 25%; }
+.comp16 { width: 8px; height: 8px; top: 18%; left: 28%; border-radius: 50%; }
+.comp17 { width: 12px; height: 12px; top: 82%; left: 68%; }
+.comp18 { width: 8px; height: 15px; top: 35%; left: 38%; }
+.comp19 { width: 15px; height: 8px; top: 12%; left: 63%; }
+.comp20 { width: 10px; height: 10px; top: 22%; left: 48%; border-radius: 50%; animation: blink 3.5s infinite; }
+
 
 
 @keyframes blink {
@@ -95,19 +121,17 @@
 .TypingAnimationSec1 h2{
     color: var(--text-color);
     font-size: 16px;
-    /* text-align: center; */
-    padding-top: 50px;
-    padding-left: 100px;
+    padding: 50px 0;
     margin-bottom: 0;
     text-transform: capitalize;
     
 }
 
-.typingCursor::after {
+/* .typingCursor::after {
     content: '|';
     animation: blink 1s step-end infinite;
-    color: var(--text-color); /* Use theme variable */
-}
+    color: var(--text-color); 
+} */
 
 @media (max-width: 768px) {
     .TypingAnimationBody {
@@ -126,7 +150,7 @@
     }
     .TypingAnimationSec2{
         margin-top: 20px;
-        border-radius: 30px;
+        border-radius: 0px;
         height: 200px; /* Added height for mobile */
     }
 }

@@ -1,0 +1,232 @@
+
+
+"use client";
+
+import React, { useState } from "react";
+import styles from "./navbar.module.css";
+import { ThemeSwitcher } from "../theme/ThemeSwitcher";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
+import Link from "next/link";
+
+function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  return (
+    <div className={styles.navdiv}>
+      <div className={styles.logo}>logo</div>
+
+      <div className={styles.navlinkDiv}>
+        <Link className={styles.navlinks} href="/home">
+          home
+        </Link>
+        <Link className={styles.navlinks} href="/about">
+          about
+        </Link>
+        <Link className={styles.navlinks} href="/contact">
+          contact
+        </Link>
+        <Link className={styles.navlinks} href="/products">
+          products
+        </Link>
+      </div>
+      <div className={styles.themeButton}>
+        <ThemeSwitcher />
+      </div>
+
+      <div className={styles.hamburger}>
+        <button className={styles.hamburger} onClick={toggleMenu}>
+         <GiHamburgerMenu  size={40}/>
+        </button>
+      </div>
+
+      <div
+        className={`${styles.dropDownmenu} ${isMenuOpen ? styles.active : ""}`}
+      >
+        <div>
+          <button
+            className={styles.dropDownmenuCloseButton}
+            onClick={toggleMenu}
+          >
+            <IoClose />
+
+
+          </button>
+        </div>
+
+        <div className={styles.dropdoenManuthemeButton}>
+          <ThemeSwitcher />
+        </div>
+
+        <Link onClick={toggleMenu} className={styles.dropdownnavlinks} href="/">
+          home
+        </Link>
+        <Link onClick={toggleMenu} className={styles.dropdownnavlinks} href="/about">
+          about
+        </Link>
+        <Link onClick={toggleMenu} className={styles.dropdownnavlinks} href="/contact">
+          contact
+        </Link>
+        <Link onClick={toggleMenu} className={styles.dropdownnavlinks} href="/products">
+          product
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
+
+
+
+.navdiv {
+  background: var(--navbar-bg);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+
+.navlinkDiv {
+  /* background: #000; */
+  height: 80%;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid var(--foreground);
+  border-radius: 10px;
+}
+
+
+.navlinks{
+  color: var(--foreground);
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px solid var(--foreground);
+  border-radius: 10px;
+  padding: 5;
+  cursor: pointer;
+}
+
+
+.navlinks:hover{
+  /* background: var(--link-bg); */
+  /* background-clip:var(--link-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: var(--primary-foreground);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.logo{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+.themeButton{
+  border: 2px solid var(--foreground);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+.dropdoenManuthemeButton{
+  border: 2px solid var(--foreground);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+
+
+.hamburger{
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border:none;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position:absolute;
+  right:20px
+}
+
+.dropDownmenu{
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--navbar-bg);
+  border: 2px solid black;
+  height: 100vh;
+  width: 100vw;
+  position: fixed; /* Changed to fixed for a full-screen overlay */
+  top: 0;
+  left: 0;
+  z-index: 50; /* Ensure it appears above other content */
+}
+
+.dropDownmenu.active {
+  display: flex; /* Show the menu when active */
+}
+
+.dropdownnavlinks{
+  color: var(--foreground);
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 2px solid var(--foreground);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.dropDownmenuCloseButton{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 2rem;
+  color: var(--foreground);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* @media (min-width: 1200px) { */
+  /* PC / Desktop styles here */
+/* } */
+
+
+/* @media (min-width: 769px) and (max-width: 1199px) { */
+  /* Laptop styles here */
+/* } */
+
+
+/* @media (min-width: 481px) and (max-width: 768px) { */
+  /* Tablet styles here */
+/* } */
+
+
+@media (max-width: 480px) {
+ 
+  .navlinkDiv {
+    display: none;
+  }
+
+  .hamburger{
+    display:flex
+  }
+
+
+}
